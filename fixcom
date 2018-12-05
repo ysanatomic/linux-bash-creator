@@ -1,0 +1,17 @@
+#!/bin/bash
+echo "file to fix? "
+read -p "Enter a name: " FILE
+your_command_string="sudo mv ~/Pictures/myscripts/$FILE /usr/local/bin/$FILE"
+output=$(eval "$your_command_string")
+echo "$output"
+echo "Moving files Completed!"
+
+
+
+
+your_command_string="sudo chmod 755 /usr/local/bin/$FILE"
+output=$(eval "$your_command_string")
+echo "$output"
+echo "Giving permissions Completed!"
+
+
