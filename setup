@@ -1,0 +1,19 @@
+#!/bin/bash
+
+your_command_string="sudo mv addcom /usr/local/bin/addcom"
+output=$(eval "$your_command_string")
+echo "$output"
+echo "Setup Completed!"
+
+your_command_string="sudo chmod 755 /usr/local/bin/addcom"
+output=$(eval "$your_command_string")
+echo "$output"
+echo "Giving permissions Completed!"
+
+echo ""
+echo "##########################"
+echo "##########################"
+echo "Created by Yordan Stoychev!"
+echo "##########################"
+echo "##########################"
+

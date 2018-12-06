@@ -1,0 +1,21 @@
+#!/bin/bash
+echo "Type the name of the file you want to add as a command! (ex: random.txt) "
+read -p "Enter a name: " FILE
+your_command_string="sudo mv $FILE /usr/local/bin/$FILE"
+output=$(eval "$your_command_string")
+echo "$output"
+echo "Moving files Completed!"
+
+
+
+
+your_command_string="sudo chmod 755 /usr/local/bin/$FILE"
+output=$(eval "$your_command_string")
+echo "$output"
+echo "Giving permissions Completed!"
+echo ""
+echo "##########################"
+echo "##########################"
+echo "Created by Yordan Stoychev!"
+echo "##########################"
+echo "##########################"
